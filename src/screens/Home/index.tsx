@@ -63,7 +63,7 @@ const Home: React.FC = () => {
               style={{marginRight: 5, marginBottom: -10,}}
             />
             <CardDeaths style={{color: themeText}}>
-              Mortes: { numberFormater(deaths) }
+              {" "}Mortes: { numberFormater(deaths) }
             </CardDeaths>
           </View>
           <View style={{flexDirection: "row", alignItems: "center"}}>
@@ -76,6 +76,7 @@ const Home: React.FC = () => {
             <CardRecovered 
               style={{color: themeText}}
             >
+              {" "}
               Recuperados: {numberFormater(recovered)}
             </CardRecovered>
           </View>
@@ -84,9 +85,10 @@ const Home: React.FC = () => {
           <AntDesign 
             name="clockcircleo" 
             size={18} 
-            style={{marginRight: 5, color: theme}}
+            style={{marginRight: 5, color: themeText}}
           />
-          <Text style={{fontSize: 16, color: theme}}>Atualizado em {date} às {time}.</Text>
+          {" "}
+          <Text style={{fontSize: 16, color: themeText}}>Atualizado em {date} às {time}.</Text>
         </Section>
       </Section>
     </Content>
